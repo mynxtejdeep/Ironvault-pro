@@ -1,0 +1,6 @@
+{
+  "name": "IRONVAULT PRO — AI Fitness & Performance Ecosystem",
+  "description": "Elite dark-gym bodybuilding and sports performance platform featuring AI Camera Trainer, bodybuilder splits, Indian nutrition, recovery matrix, and personalized fitness coaching.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

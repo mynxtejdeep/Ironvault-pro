@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Lemon Drop';
+  src: local('Lemon Drop'), local('LemonDrop'), local('Lemon-Drop');
+  font-display: swap;
+}
+
+@theme {
+  --font-brand: 'Lemon Drop', 'Lemon', 'Barlow Condensed', sans-serif;
+  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-athletic: 'Barlow Condensed', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  :root {
+    --font-brand: 'Lemon Drop', 'Lemon', 'Barlow Condensed', sans-serif;
+    --font-athletic: 'Barlow Condensed', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  .font-brand {
+    font-family: var(--font-brand);
+    letter-spacing: 0.04em;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-athletic);
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Custom dark gym carbon pattern and red ambient glow */
+.gym-carbon-bg {
+  background-color: #070708;
+  background-image: radial-gradient(rgba(239, 68, 68, 0.08) 1px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.03) 1px, #070708 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.gym-card {
+  background: linear-gradient(180deg, #121316 0%, #0a0b0d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.gym-card-highlight {
+  background: linear-gradient(180deg, #18191e 0%, #0d0e12 100%);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.glow-red {
+  box-shadow: 0 0 25px -5px rgba(220, 38, 38, 0.4);
+}
+
+.glow-amber {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.35);
+}
+
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ef4444;
+}
