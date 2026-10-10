@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/Ironvault-pro/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
